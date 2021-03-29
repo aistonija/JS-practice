@@ -109,3 +109,11 @@ console.log(
 
 // * - change engineOn value to opposite
 // * - log "(First person from people array) started engine and began to ride",
+
+redCar.engineOn = !redCar.engineOn;
+console.log(`${redCar.people[0]} started engine and began to ride`);
+
+// * - increase car speed by 60, decrease fuel by 3,
+// log "at first car speed was (speed), they had (fuel) left"
+
+console.log(redCar);
