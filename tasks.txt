@@ -113,3 +113,54 @@ let shop = {
 
 
 // ------------------------------------------------------------------------------------
+
+// 9. * - Atlikite veiksmus su duotu objektu:
+
+let car = {
+  wheels: 3,
+  broken: true,
+  gasoline: 3,
+  driver: "Mister Twister",
+  destination: "USA",
+  musicIsPlaying: false,
+  stuffInTrunk: [
+    "ball",
+    "dolphin",
+    "empty bottles",
+    "snails",
+    "childhood dreams",
+  ],
+  kilometersMade: 0,
+};
+
+// 9.1. Patikrinkite ar automobilis eksploatuojamas.
+
+// Jeigu ne, patikrinkite ar automobilis turi degalų. Jei ne, 'įpilkite' 5 litrus.
+
+// Prie to pačio patikrinkite ar automobilis turi 4 ratus. Jeigu taip, 'broken' savybę pakeiskite į 'false' ir išloginkite "(driver) jau važiuoja į (destination)".
+
+// 'Įsijunkite' muziką (musicIsPlaying)
+
+//////
+
+// Prie nuvažiuotų kilometrų pridėkite 70km.
+
+// Patikrinkite ar automobilis nuvažiavo daugiau nei 350km. Jei taip - nustatykite broken į true, ir atimkite vieną ratą, išjunkite muziką.
+
+//////
+
+// Prie nuvažiuotų kilometrų pridėkite 70km.
+
+// Patikrinkite ar automobilis nuvažiavo daugiau nei 350km. Jei taip - nustatykite broken į true, ir atimkite vieną ratą, išjunkite muziką.
+
+//////
+
+// Prie nuvažiuotų kilometrų pridėkite 120km.
+
+// Patikrinkite ar automobilis nuvažiavo daugiau nei 350km. Jei taip - nustatykite broken į true, ir atimkite vieną ratą, išjunkite muziką.
+
+//////
+
+// Prie nuvažiuotų kilometrų pridėkite 220km.
+
+// Patikrinkite ar automobilis nuvažiavo daugiau nei 350km. Jei taip - nustatykite broken į true, ir atimkite vieną ratą, išjunkite muziką.
