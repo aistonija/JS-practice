@@ -79,4 +79,9 @@ const authorsNameHidden = [
     [88, 6547, 686, "paprika", 1, [44, "Neimontaite"]],
   ],
 ];
+
 let authorsName;
+let firstName = authorsNameHidden[2][1][1];
+let lastName = authorsNameHidden[2][4][5][1];
+authorsName = firstName.concat(" ", lastName);
+console.log(authorsName);
