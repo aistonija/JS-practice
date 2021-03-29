@@ -100,3 +100,12 @@ const redCar = {
 
 // * - Get passengers count,
 // * - log string "red (Car Model) was standing by the road with (number) people inside"
+
+let passengersCount = redCar.people.length;
+
+console.log(
+  `red ${redCar.model} was standing by the road with ${passengersCount} people inside`
+);
+
+// * - change engineOn value to opposite
+// * - log "(First person from people array) started engine and began to ride",
