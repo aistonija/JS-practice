@@ -97,3 +97,6 @@ const redCar = {
   broken: false,
   people: ["John", "Lucy", "Marta", "Fat Joe"],
 };
+
+// * - Get passengers count,
+// * - log string "red (Car Model) was standing by the road with (number) people inside"
