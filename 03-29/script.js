@@ -68,20 +68,32 @@
 
 // * - // Get authors name from array, make authorsName value to be string with authors name and surname
 
-const authorsNameHidden = [
-  47,
-  "saldytuvas",
-  [
-    "5877",
-    [654, "Danute"],
-    99,
-    "",
-    [88, 6547, 686, "paprika", 1, [44, "Neimontaite"]],
-  ],
-];
+// const authorsNameHidden = [
+//   47,
+//   "saldytuvas",
+//   [
+//     "5877",
+//     [654, "Danute"],
+//     99,
+//     "",
+//     [88, 6547, 686, "paprika", 1, [44, "Neimontaite"]],
+//   ],
+// ];
 
-let authorsName;
-let firstName = authorsNameHidden[2][1][1];
-let lastName = authorsNameHidden[2][4][5][1];
-authorsName = firstName.concat(" ", lastName);
-console.log(authorsName);
+// let authorsName;
+// let firstName = authorsNameHidden[2][1][1];
+// let lastName = authorsNameHidden[2][4][5][1];
+// authorsName = firstName.concat(" ", lastName);
+// console.log(authorsName);
+
+// ------------------------------------------------------
+
+const redCar = {
+  model: "audi",
+  engineOn: false,
+  wheels: 4,
+  fuel: 40,
+  speed: 0,
+  broken: false,
+  people: ["John", "Lucy", "Marta", "Fat Joe"],
+};
