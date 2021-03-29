@@ -116,4 +116,13 @@ console.log(`${redCar.people[0]} started engine and began to ride`);
 // * - increase car speed by 60, decrease fuel by 3,
 // log "at first car speed was (speed), they had (fuel) left"
 
+redCar.speed += 60;
+redCar.fuel -= 3;
+
+console.log(
+  `at first car speed was ${redCar.speed}, they had ${redCar.fuel} litres of fuel left`
+);
+
+// * - increase car speed by 60, decrease fuel by 5, log "later car speed was (speed, they had (fuel) left"
+
 console.log(redCar);
