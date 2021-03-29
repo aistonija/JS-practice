@@ -135,4 +135,32 @@ console.log(
 // * - check if car speed is more than 100 and passengers count is more than 3
 // if yes subtract 1 from wheels and change broken to opposite value
 
+if (redCar.speed > 100 && redCar.people.length > 3) {
+  redCar.wheels--;
+  redCar.broken = !redCar.broken;
+}
+
+///////////////// additional tasks ///////////////////////
+
+// * - log "while driving at (speed) kmh, one wheel went off so car was forced to stop"
+
+// * - change engineOn to opposite value, and speed to 0 kmh
+
+// * - log "(first person name) got out to check the problem, and he saw only (wheels) was left"
+
+// * - log "ohh no, said (any girl from people array), looks like car was loaded too much, so we lost one wheel"
+
+// * - log "i have an idea, said (any girl from people array), we should take (last person in people array) out and leave him by the road"
+
+// * - log "great idea! shouted (first person from people array)"
+
+// * - remove last person from people array, make oneByTheRoad value to be removed persons name
+
+// * - add one to wheels, change engineOn and broken values to opposite
+
+// log "few moments later car was hitting the road with (people count) passengers inside"
+
+// log "while (oneByTheRoad) was left glancing surly at red (car model) vanishing in horizon"
+
+// subtract 6 from fuel and log "car successfully reached home with (fuel) left and all (people count) people"
 console.log(redCar);
