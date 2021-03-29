@@ -125,4 +125,14 @@ console.log(
 
 // * - increase car speed by 60, decrease fuel by 5, log "later car speed was (speed, they had (fuel) left"
 
+redCar.speed += 60;
+redCar.fuel -= 5;
+
+console.log(
+  `later car speed was ${redCar.speed}, they had ${redCar.fuel} litres of fuel left`
+);
+
+// * - check if car speed is more than 100 and passengers count is more than 3
+// if yes subtract 1 from wheels and change broken to opposite value
+
 console.log(redCar);
