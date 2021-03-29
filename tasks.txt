@@ -1,0 +1,115 @@
+// 1. Darbas su tekstu (strings)
+
+let myTask = "Hello, this text is in upper case or in lower case";
+
+// 1.1. * - console.log texto ilgį;
+
+// 1.2. * - naudojant replace() metodą pakeisti žodį 'upper' į 'uber';
+
+// 1.3. * - atvaizduoti tekstą didžiosiomis raidėmis;
+
+// 1.4. * - iš turimo teksto išrinkti raides per jų indeksus myTask[0] ir log'inti reikšmę: slow car
+
+// 1.5. * - suraskite, kokiu indexu sakinyje stovi kablelis, atvaizduokite tokiu formatu:
+// index of ",": 5
+
+// ------------------------------------------------------------------------------------
+
+// 2. * - Pasinaudodami duotais kintamaisiais, sudarykite sakinį:
+
+// "B is the second letter of alphabet"
+
+const firstOrSecond = ["first", "second"];
+const valueOne = "A is the";
+const valueTwo = "letter of alphabet";
+
+// 2.1. * - Susikurtį kintamąjį su reikšme: "this string length is (counted symbols) symbols length".
+// console.log šį sakinį, kartu ir apskaičiuojant sakinio ilgį.
+
+// ------------------------------------------------------------------------------------
+
+// 3. * - iš duoto masyvo reikšmių, esančių viduje, sudarykite sakinį:
+// "ohh baby it's cold outside"
+
+const randoms = [0, 20, "ohh", [78, "baby"], ["it's cold", 11, 22], "outside"];
+
+// ------------------------------------------------------------------------------------
+
+// 4. * - naudodami .push() ir unshift() metodus, iš pagrindinio masyvo į ascendingOrder masyvą sudėkite reikšmes išrikiuotai didėjančia tvarka.
+// rezultatas: ascendingOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+// numbersRandom lieka originalus, nekeistas.
+
+const numbersRandom = [0, 5, 6, 8, 1, 2, 3, 7];
+const ascendingOrder = [4];
+
+// ------------------------------------------------------------------------------------
+
+// 5. * - pakeisti 'pienas' i 'jogurtas', pabandyti įvairiais būdais:
+
+// 5.1. statinis per index;
+
+// 5.2 naudojant array.splice() metodą;
+
+// 5.3. naudojant array.find() metodą įsitikinti, kad ieškomas produktas egzistuoja. Jei produktas egzistuoja - pakeičiama reikšmė, kitu atveju rodoma žinutė, kad tokio produkto nėra (if sąlyga)
+
+// 5.4. Pasirašyti funkciją, kuriai padavus parametrus pvz. masyvas, ieškoma reikšmė, nauja reikšmė, yra pakeičiama reikšmė, jeigu toks produktas buvo rastas.
+
+
+// ------------------------------------------------------------------------------------
+
+// 6. * - Sukurti objektą, atitinkantį pateiktą struktūrą, su jūsų sugalvotomis reikšmėmis. Naudojame shift(), push(), pop(), unshift(), increment, if..
+
+// name: string value,
+// toysArray: array of 3-4 values ['value', 'value', 'value'],
+// yearsOld: number,
+// birthday: true,
+// totalToys: null
+// friends: array of three friends (objects), their names, and what they are doing at the moment
+
+// 6.1. * - check if Jerry is having his birthday if yes do things:
+// 6.2. * - remove teddy bear from hasToys array 
+// 6.3. * - add "ps4" to end of hasToys array
+// 6.4. * - increment yearsOld by one
+// 6.5. * - make totalToys key to always show length of hasToys array
+// 6.6. * - log each of Jerry friends
+
+// ------------------------------------------------------------------------------------
+
+
+// 7. * - sukurti naują kintamąjį, kur abu sakiniai būtų sujungti į vieną, atskirti tarpu
+
+let firstString = "this is my first string";
+let secondString = "this is my second string";
+
+// 7.1. * - sukurti naują kintamąjį, kuris apskaičiuos pirmo ir antro stringo simbolių sumas.
+
+// 7.2. * - naudojant replace() metodą, pakeisti iš 'this' į 'that' abiejuose stringuose.
+
+// 7.3. * - naudojant indexOf() metodą, surasti, kurioje vietoje stovi žodis 'is'. 
+
+// ------------------------------------------------------------------------------------
+
+// 8. * - Atlikite veiksmus su duotu objektu:
+
+let shop = {
+  products: ["milk", "honey", "bred pita", "water", "socks"],
+  productPrice: 164,
+  shopWorksTill: 22,
+  peopleInLine: ["first", "second", "third"],
+  moneyInPocket: 5500,
+  currentTime: 21,
+  wentForShopping: false,
+};
+
+// 8.1. * - patikrinkite ar dabartinis laikas (currentTime) yra mažiau nei parduotuvės darbo laikas (shopWorksTill)
+
+// 8.2. * - jei sąlyga atitinka (true) - pakeiskite wentForShoppint į atvirkštinę reikšmę
+
+// 8.3. * - Taip pat patikrinkite ar turite užtektinai pinigų (moneyInPocket) nusipirkti visiems produktams (pirmiausiai apsiskaičiuokite visų produktų kainą naudodami .length ir productPrice)
+
+// 8.4. * - Jeigu pinigų užtenka, log visus produktus, kuriuos nusipirkote.
+
+// 8.5. * - Jeigu pinigų neužteko, trečias žmogus eilėje (peopleInLine) turi būti jūsų vardas. Taip pat iš visos turimos sumos atimkite 256 ir išloginkite: "____ pinigų liko po apsipirkimo"
+
+
+// ------------------------------------------------------------------------------------
