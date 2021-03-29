@@ -55,3 +55,11 @@
 
 const arr = ["zuvis", "zvejyba", "ezeras", "meduolis"];
 let result = "Mmmmm koks velniskai skanus";
+// console.log(`1 budas: ${result} ${arr.pop()}`);
+
+let lastElement = arr.pop();
+let finalResult = result + " " + lastElement;
+console.log(`2 budas: ${finalResult}`);
+
+let concat = result.concat(" ", lastElement);
+console.log(`3 budas: ${concat}`);
