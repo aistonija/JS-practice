@@ -31,4 +31,10 @@ one.words.unshift(newObj);
 // 4. replace second word in 'words' array to be 'secondddddd' and add its length to the and of word.
 // Use indexOf to find where the words second stands, and then use splice method.
 
+let wordIndex = one.words.indexOf("second");
+one.words.splice(wordIndex, 1, "secondddddd");
+
+// 5. in key 'objects', make EMPTY to be in lower case, and replace its last letter 'y' with '88'.
+// Use charAt()
+
 console.log(one);
