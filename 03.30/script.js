@@ -37,12 +37,10 @@ one.words.splice(wordIndex, 1, "secondddddd");
 // 5. in key 'objects', make EMPTY to be in lower case, and replace its last letter 'y' with '88'.
 // Use charAt() & replace()
 //rezultatas: objects: [{ one: "empt88" }, { two: "replace to milk", three: "full" }],
+
 // let word = one.objects[0].one;
-
-// console.log(word);
-
 // let letterToReplace = word.charAt(word.length - 1);
-// let newLetter = '88'
+// let newLetter = "88";
 // word = word.replace(letterToReplace, newLetter).toLowerCase();
 
 // one.objects[0].one = word;
@@ -54,5 +52,39 @@ one.objects[0].one = one.objects[0].one
 // 6. in key 'arrays' make all text in lower case to be upper case and vice versa.
 // use foreach and if.
 
-//arrays: [[[[[[[[84, 85, 257, 577, "WORD", "SMALL", "big"]]]]]]]],
+// hint steps:
+// 1. create new variable which holds your array you want to iterate
+// 2. start forEach cycle
+// 3. check if item is string -
+// 4. if yes, check if string is lowerCase - if yes - change to upperCase
+// 5. else - change to lowerCase
+// 6. rewrite old array values with new array values
+
+// original:
+// arrays: [[[[[[[[84, 85, 257, 577, "word", "small", "BIG"]]]]]]]]
+
+// expected:
+// arrays: [[[[[[[[84, 85, 257, 577, "WORD", "SMALL", "big"]]]]]]]],
+
+let myArray = one.arrays[0][0][0][0][0][0][0];
+// naujas tuscias masyvas, i kuri desime reiksmes
+let newArr = [];
+
+myArray.forEach((item) => {
+  if (item === String(item)) {
+    if (item === item.toLowerCase()) {
+      item = item.toUpperCase();
+    } else {
+      item = item.toLowerCase();
+    }
+  }
+
+  // prasisukus ciklui pakeista reiksme ikeliama i nauja masyva, kuris buvo sukurtas ir issaugotas pries kvieciant cikla (70eilute)
+  newArr.push(item);
+});
+
+console.log(newArr);
+
+one.arrays[0][0][0][0][0][0][0] = newArr;
+
 console.log(one);

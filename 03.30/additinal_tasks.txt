@@ -1,0 +1,13 @@
+//Papildomos užduotys su one objektu
+
+// remove last word from 'words' array and put it to new key in object 'lostWord'
+
+// in key 'objects', replace text 'replace to milk' to - 'replace to silk'
+
+// create new object with key 'nums' to be empty array
+
+// take all numbers which has 7 from object 'one' and put to newly created object array 'nums'
+
+------------------------------------------------------------------------
+
+
