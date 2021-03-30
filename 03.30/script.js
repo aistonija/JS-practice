@@ -51,6 +51,8 @@ one.objects[0].one = one.objects[0].one
   .replace(one.objects[0].one.charAt(one.objects[0].one.length - 1), "88")
   .toLowerCase();
 
-console.log(one);
+// 6. in key 'arrays' make all text in lower case to be upper case and vice versa.
+// use foreach and if.
 
-// 6. in key 'arrays' make all text in lower case to be upper case and vice versa. use foreach and if.
+//arrays: [[[[[[[[84, 85, 257, 577, "WORD", "SMALL", "big"]]]]]]]],
+console.log(one);
