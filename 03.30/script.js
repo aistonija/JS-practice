@@ -4,3 +4,5 @@ let one = {
   objects: [{ one: "EMPTY" }, { two: "replace to milk", three: "full" }],
   arrays: [[[[[[[[84, 85, 257, 577, "word", "small", "BIG"]]]]]]]],
 };
+
+// 1. create new key in object make it value to be first and last numbers from 'numbers' key (remove them from array)
