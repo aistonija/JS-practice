@@ -11,13 +11,16 @@ let one = {
 
 one.firstLast = [one.numbers.shift(), one.numbers.pop()];
 
-// Edvar variantas:
-one.twoNumber = [];
+// 2. make something with number 2874 in 'numbers' so it becomes string and replace 28 with $$
 
-one.twoNumber.push(one.numbers.shift());
+//statinis variantas
+one.numbers[2] = one.numbers[2].toString();
+one.numbers[2] = one.numbers[2].replace("28", "$$$");
 
-one.twoNumber.push(one.numbers.pop());
+// dinamiskesnis variantas
+let digit = one.numbers.indexOf(2874);
+one.numbers[digit] = one.numbers[digit].toString().replace("28", "$$$");
 
-// 2. make something with number 2874 in 'numbers' so it becomes string, and replace 28 with $$
+// 3. take out last word from 'words' and put it to beginning of the array, make it to be upperCase
 
 console.log(one);
