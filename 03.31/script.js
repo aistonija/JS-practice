@@ -9,4 +9,4 @@
 // - nuo 25 iki 64: 0%;
 // - nuo 65: 85%;
 
-// Parašyti funkciją, kuriai padavus amžių bus grąžinama bilieto kaina.
+// Parašyti funkciją, kuriai padavus amžių ir bilieto kainą bus grąžinama apskaičiuota bilieto kaina.
