@@ -65,7 +65,7 @@ const info = {
   delphin: Math.round(Math.random()),
 };
 
-console.log(info);
+console.log(info.sharkSpeed);
 console.log(`
 sharkDistance: ${info.sharkDistance}m 
 sharkSpeed: ${info.sharkSpeed}m/s 
@@ -76,3 +76,22 @@ delphin: ${info.delphin ? "delphin!" : "no delphin"}`);
 // 2.1 salygos:
 
 // jeigu delfinas yra true, t.y iskrito 1 - ryklio greitis suleteja dvigubai.
+
+// 1. budas
+if (info.delphin === 1) {
+  info.sharkSpeed = info.sharkSpeed / 2;
+}
+
+// 2. budas
+if (info.delphin) {
+  info.sharkSpeed /= 2;
+}
+
+// 3. budas
+let rykliuiPz = info.delphin ? info.sharkSpeed / 2 : null;
+
+console.log(rykliuiPz);
+
+console.log(info.sharkSpeed);
+
+// 2.2.
