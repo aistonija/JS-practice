@@ -51,3 +51,24 @@ const ticketPrice = (age, standardPrice) => {
 
 // console.log objekta;
 // console.log iškritusius duomenis string'e.
+
+// helper function - generate random number
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const info = {
+  sharkDistance: getRndInteger(0, 55),
+  sharkSpeed: getRndInteger(4, 20),
+  boatDistance: getRndInteger(7, 40),
+  humanSpeed: getRndInteger(4, 5),
+  delphin: Math.round(Math.random()),
+};
+
+console.log(info);
+console.log(`
+sharkDistance: ${info.sharkDistance}m 
+sharkSpeed: ${info.sharkSpeed}m/s 
+boatDistance: ${info.boatDistance}m 
+humanSpeed: ${info.humanSpeed}m/s 
+delphin: ${info.delphin ? "delphin!" : "no delphin"}`);
