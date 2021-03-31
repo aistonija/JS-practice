@@ -87,6 +87,7 @@ if (info.delphin) {
   info.sharkSpeed /= 2;
 }
 
+console.log("sharkSpeed:", info.sharkSpeed);
 // 3. budas
 // let rykliuiPz = info.delphin ? info.sharkSpeed / 2 : null;
 
@@ -98,8 +99,23 @@ if (info.delphin) {
 // issiaiskinti ar iskritusiomis salygomis ryklys jus uzpuls ar liksite gyvas.
 
 // hint: apskaiciuoti per kiek laiko zmogus nuplauks iki valties
+let myTime = info.boatDistance / info.humanSpeed;
+console.log("myTime:", myTime);
+
 // hint: apskaiciuoti per kiek laiko ryklys atplauks iki manes.
 
+let sharkTime = info.sharkDistance / info.sharkSpeed;
+console.log("sharkTime:", sharkTime);
+
 // jeigu zmogus greiciau nuplaukia iki valties nei iki jo atplaukia ryklys - jis lieka gyvas.
+
+let alive;
+if (myTime < sharkTime) {
+  alive = "Likau gyvas";
+} else {
+  alive = "ryklys suede..";
+}
+
+console.log(alive);
 
 // console.log rezultata
