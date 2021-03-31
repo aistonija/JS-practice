@@ -78,9 +78,9 @@ delphin: ${info.delphin ? "delphin!" : "no delphin"}`);
 // jeigu delfinas yra true, t.y iskrito 1 - ryklio greitis suleteja dvigubai.
 
 // 1. budas
-if (info.delphin === 1) {
-  info.sharkSpeed = info.sharkSpeed / 2;
-}
+// if (info.delphin === 1) {
+//   info.sharkSpeed = info.sharkSpeed / 2;
+// }
 
 // 2. budas
 if (info.delphin) {
@@ -88,10 +88,14 @@ if (info.delphin) {
 }
 
 // 3. budas
-let rykliuiPz = info.delphin ? info.sharkSpeed / 2 : null;
+// let rykliuiPz = info.delphin ? info.sharkSpeed / 2 : null;
 
-console.log(rykliuiPz);
+// console.log(rykliuiPz);
 
-console.log(info.sharkSpeed);
+//////////////////////////////////////
 
-// 2.2.
+// 2.2 Uzduotis:
+// issiaiskinti ar iskritusiomis salygomis ryklys jus uzpuls ar liksite gyvas.
+
+// jeigu zmogus greiciau nuplaukia iki valties nei iki jo atplaukia ryklys - jis lieka gyvas.
+// console.log rezultata
