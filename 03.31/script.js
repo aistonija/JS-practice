@@ -30,4 +30,24 @@ const ticketPrice = (age, standardPrice) => {
 
 // console.log(ticketPrice(2, 10));
 
-//
+// 2. Ryklio ataka
+
+// 2.1. Pagal duotus duomenis pasidaryti objekta su savybemis:
+
+// Atstumas iki ryklio metrais:
+// sharkDistance: random(0, 55)
+
+// Ryklio greitis metrais per sekunde:
+// sharkSpeed: random(4, 20)
+
+// Atstumas metrais iki valties, kuri man reikia nuplaukti:
+// boatDistance: random(7, 40)
+
+// Mano greitis metrais per sekunde:
+// humandSpeed: random(4, 5)
+
+// Delfinas horizonte:
+// delphin: random(0, 1)
+
+// console.log objekta;
+// console.log iškritusius duomenis string'e.
