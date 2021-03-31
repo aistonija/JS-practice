@@ -83,8 +83,43 @@ myArray.forEach((item) => {
   newArr.push(item);
 });
 
-console.log(newArr);
+// console.log(newArr);
 
 one.arrays[0][0][0][0][0][0][0] = newArr;
 
+/////////////////////////////////////////////////////////////////////////
+
+// Papildomos užduotys su one objektu
+
+// remove last word from 'words' array and put it to new key in object 'lostWord'
+one.lostWord = one.words.pop();
+
+// in key 'objects', replace text 'replace to milk' to - 'replace to silk'
+let replaceToMilk = one.objects[1].two;
+replaceToMilk = replaceToMilk.replace("silk", "milk");
+one.objects[1].two = replaceToMilk;
+
+// create new object with key 'nums' to be empty array
+let objecto = {
+  nums: [],
+};
+
+// take all numbers which has 7 from object 'one' and put to newly created object array 'nums'
+let foundNumbers = [];
+
+one.numbers.forEach((item) => {
+  if (String(item).indexOf("7") > -1) {
+    foundNumbers.push(item);
+  }
+});
+
+one.arrays[0][0][0][0][0][0][0].forEach((item) => {
+  if (String(item).indexOf("7") > -1) {
+    foundNumbers.push(item);
+  }
+});
+
+objecto.nums = foundNumbers;
+//-----------------------------------------------------------------------
+console.log(objecto);
 console.log(one);
