@@ -19,7 +19,8 @@ const library = [
 // check if all readingStatus is true
 // if yes sum up all titles and console log them
 
-// if no: check each object in array readingStatus separately
+// if not all readingStatus is true (at least one false):
+// check each object in array readingStatus separately
 // for those which are positive log their authors name and surname first letters
 // also add new key "titleLength", which represents that object title length
 
