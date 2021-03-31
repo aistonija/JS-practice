@@ -72,3 +72,7 @@ sharkSpeed: ${info.sharkSpeed}m/s
 boatDistance: ${info.boatDistance}m 
 humanSpeed: ${info.humanSpeed}m/s 
 delphin: ${info.delphin ? "delphin!" : "no delphin"}`);
+
+// 2.1 salygos:
+
+// jeigu delfinas yra true, t.y iskrito 1 - ryklio greitis suleteja dvigubai.
