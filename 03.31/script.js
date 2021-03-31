@@ -97,5 +97,9 @@ if (info.delphin) {
 // 2.2 Uzduotis:
 // issiaiskinti ar iskritusiomis salygomis ryklys jus uzpuls ar liksite gyvas.
 
+// hint: apskaiciuoti per kiek laiko zmogus nuplauks iki valties
+// hint: apskaiciuoti per kiek laiko ryklys atplauks iki manes.
+
 // jeigu zmogus greiciau nuplaukia iki valties nei iki jo atplaukia ryklys - jis lieka gyvas.
+
 // console.log rezultata
