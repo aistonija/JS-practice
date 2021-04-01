@@ -1,18 +1,18 @@
 const library = [
   {
-    author: "Bill Gates",
+    author: "Bill-Junior Gates MacDonalds",
     title: "The Road Ahead",
     readingStatus: true,
   },
   {
-    author: "Steve Jobs",
+    author: "Steve Jobs junior",
     title: "Walter Isaacson",
     readingStatus: true,
   },
   {
-    author: "Suzanne Collins",
+    author: "Suzanne Collins ",
     title: "Mockingjay: The Final Book of The Hunger Games",
-    readingStatus: true,
+    readingStatus: false,
   },
 ];
 
@@ -29,17 +29,20 @@ const library = [
 //   console.log("nesigavo");
 // }
 
+// susikuriu flag
 let result = true;
 
 library.forEach((item) => {
+  // tikriname ar nors vienas yra false
   if (!item.readingStatus) {
+    // jeigu bent viena false radome - bendra rezultata pakeiciame
     result = false;
   }
 });
 
 // console.log(result);
-// if not all readingStatus is true (at least one false):
 
+// check whether flag variable was true ar false
 if (result) {
   // dynamic way
   let titles = [];
@@ -48,11 +51,27 @@ if (result) {
 
   // static way
   console.log(`${library[0].title}, ${library[1].title}, ${library[2].title} `);
+
+  // if not all readingStatus is true (at least one false):
 } else {
-  //write code here
+  // check each object in array readingStatus separately
+  library.forEach((item) => {
+    if (item.readingStatus) {
+      let namesArr = item.author.split(" ");
+      console.log(namesArr);
+
+      let initials = namesArr.map((el) => el.charAt(0));
+      initials = initials.join(".");
+
+      console.log(initials);
+    }
+
+    item.titleLength = item.title.length;
+  });
 }
 
-// check each object in array readingStatus separately
+console.log(library)
+
 // for those which are positive log their authors name and surname first letters
 
 // add new key "titleLength" to all objects, which represents that object title length
