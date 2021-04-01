@@ -7,17 +7,42 @@ const library = [
   {
     author: "Steve Jobs",
     title: "Walter Isaacson",
-    readingStatus: true,
+    readingStatus: false,
   },
   {
     author: "Suzanne Collins",
     title: "Mockingjay: The Final Book of The Hunger Games",
-    readingStatus: false,
+    readingStatus: true,
   },
 ];
 
 // check if all readingStatus is true
 // if yes sum up all titles and console log them
+
+// if (
+//   library[0].readingStatus &&
+//   library[1].readingStatus &&
+//   library[2].readingStatus
+// ) {
+//   console.log("jega");
+// } else {
+//   console.log("nesigavo");
+// }
+
+let result = true;
+
+library.forEach((item) => {
+  if (!item.readingStatus) {
+    result = false;
+  }
+});
+
+// console.log(result);
+
+if (result) {
+  console.log();
+} else {
+}
 
 // if not all readingStatus is true (at least one false):
 // check each object in array readingStatus separately
@@ -35,4 +60,4 @@ const library = [
 // check if book.booIsNew and library.length is more than 2
 // if yes add book variable value to the end of library array
 
-console.log(library);
+// console.log(library);
