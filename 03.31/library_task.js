@@ -22,7 +22,8 @@ const library = [
 // if not all readingStatus is true (at least one false):
 // check each object in array readingStatus separately
 // for those which are positive log their authors name and surname first letters
-// also add new key "titleLength", which represents that object title length
+
+// add new key "titleLength" to all objects, which represents that object title length
 
 // check if first object in array has longer title then last object in array
 // if no push one more object to library array with you favorite author, title, and reading status
@@ -30,5 +31,8 @@ const library = [
 // remove first item from library array, put it to new variable "book"
 
 // add new key to variable book "bookIsNew" set it to true
+
 // check if book.booIsNew and library.length is more than 2
 // if yes add book variable value to the end of library array
+
+console.log(library);
