@@ -77,13 +77,30 @@ if (result) {
 console.log(library);
 
 // check if first object in array has longer title then last object in array
-// if no push one more object to library array with you favorite author, title, and reading status
+if (library[0].titleLength < library[library.length - 1].titleLength) {
+  // if no push one more object to library array with you favorite author, title, and reading status
+  library.push({
+    author: "Aiste Z",
+    title: "Mano gyvenimas",
+    readingStatus: true,
+  });
+}
+
+console.log(library);
 
 // remove first item from library array, put it to new variable "book"
 
-// add new key to variable book "bookIsNew" set it to true
+let book = library.shift();
+console.log(book);
 
-// check if book.booIsNew and library.length is more than 2
+// add new key to variable book "bookIsNew" set it to true
+book.bookIsNew = true;
+
+// check if book.booIsNew is true and library.length is more than 2
 // if yes add book variable value to the end of library array
 
-// console.log(library);
+if (book.bookIsNew && library.length > 2) {
+  library.push(book);
+}
+
+console.log(library);
