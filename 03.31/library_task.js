@@ -7,7 +7,7 @@ const library = [
   {
     author: "Steve Jobs",
     title: "Walter Isaacson",
-    readingStatus: false,
+    readingStatus: true,
   },
   {
     author: "Suzanne Collins",
@@ -38,13 +38,20 @@ library.forEach((item) => {
 });
 
 // console.log(result);
+// if not all readingStatus is true (at least one false):
 
 if (result) {
-  console.log();
+  // dynamic way
+  let titles = [];
+  library.forEach((item) => titles.push(item.title));
+  console.log(titles.join(", "));
+
+  // static way
+  console.log(`${library[0].title}, ${library[1].title}, ${library[2].title} `);
 } else {
+  //write code here
 }
 
-// if not all readingStatus is true (at least one false):
 // check each object in array readingStatus separately
 // for those which are positive log their authors name and surname first letters
 
