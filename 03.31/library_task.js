@@ -56,25 +56,25 @@ if (result) {
 } else {
   // check each object in array readingStatus separately
   library.forEach((item) => {
+    // for those which are positive
     if (item.readingStatus) {
+      // create array of item author name splitted by space
       let namesArr = item.author.split(" ");
       console.log(namesArr);
 
+      // map through array and leave only first letter
       let initials = namesArr.map((el) => el.charAt(0));
       initials = initials.join(".");
-
+      //log their authors name and surname first letters
       console.log(initials);
     }
 
+    // add new key "titleLength" to all objects, which represents that object title length
     item.titleLength = item.title.length;
   });
 }
 
-console.log(library)
-
-// for those which are positive log their authors name and surname first letters
-
-// add new key "titleLength" to all objects, which represents that object title length
+console.log(library);
 
 // check if first object in array has longer title then last object in array
 // if no push one more object to library array with you favorite author, title, and reading status
