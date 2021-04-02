@@ -6,7 +6,7 @@
 
 let arrayOfBooleans = [true, false, false, true, true, true, false];
 let newArrayBools = [false, true, true, false, false, false, true];
-console.log("original array:", arrayOfBooleans);
+//console.log("original array:", arrayOfBooleans);
 
 // 1. budas
 
@@ -14,7 +14,7 @@ for (let x = 0; x < arrayOfBooleans.length; x++) {
   arrayOfBooleans[x] = !arrayOfBooleans[x];
 }
 
-console.log("array after for loop", arrayOfBooleans);
+//console.log("array after for loop", arrayOfBooleans);
 
 // 2. budas
 
@@ -28,15 +28,40 @@ function flipBools(array) {
 }
 
 const newBools = flipBools(arrayOfBooleans);
-console.log("for'as funkcijoje:", newBools);
+//console.log("for'as funkcijoje:", newBools);
 
 // 3. budas
 
 const flippedBools = newBools.map((item) => (item = !item));
-console.log("simple map():", flippedBools);
+//console.log("simple map():", flippedBools);
 
 // 4. budas
 
 const flippingAgain = (array) => array.map((item) => (item = !item));
-console.log(flippingAgain(flippedBools));
-console.log(flippingAgain(arrayOfBooleans));
+//console.log(flippingAgain(flippedBools));
+//console.log(flippingAgain(arrayOfBooleans));
+
+//------------------------------------------------------------------------
+
+// 2. write a function hasSameBread():
+// Given two arrays, which represent two sandwiches, return whether
+// both sandwiches use the same type of bread (return true or false).
+// The bread will always be found at the start and end of the array.
+
+console.log(
+  hasSameBread(
+    ["white bread", "lettuce", "white bread"],
+    ["white bread", "tomato", "white bread"]
+  )
+);
+
+console.log(
+  hasSameBread(
+    ["brown bread", "chicken", "brown bread"],
+    ["white bread", "chicken", "white bread"]
+  )
+);
+
+console.log(
+  hasSameBread(["toast", "cheese", "toast"], ["brown bread", "cheese", "toast"])
+);
